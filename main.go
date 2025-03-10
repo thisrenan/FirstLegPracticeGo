@@ -13,4 +13,13 @@ func main() {
 	var i int
 	fmt.Scan(&i)
 	fmt.Println("The number entered was", i)
+
+	fmt.Println("3. Create a program that requests two numbers and prints the sum.")
+
+	var a, b float32
+
+	fmt.Scan(&a)
+	fmt.Scan(&b)
+
+	fmt.Println("The sum of", a, "+", b, "is", a+b)
 }
