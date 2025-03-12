@@ -112,6 +112,7 @@ func main() {
 	fmt.Println("12. Create a program that asks for two numbers and prints the largest of them.")
 
 	var number1, number2 int
+
 	fmt.Println("Enter an integer number:")
 	fmt.Scan(&number1)
 	fmt.Println("Enter another integer number:")
@@ -121,5 +122,18 @@ func main() {
 		fmt.Println(number1)
 	} else {
 		fmt.Println(number2)
+	}
+
+	fmt.Println("13. Create a program that asks for a value and shows on the screen whether the value is positive or negative.")
+
+	var value float32
+
+	fmt.Println("Enter a value:")
+	fmt.Scan(&value)
+
+	if value > 0 {
+		fmt.Println("The value entered is positive.")
+	} else if value < 0 {
+		fmt.Println("The value entered is negative.")
 	}
 }
