@@ -34,4 +34,12 @@ func main() {
 
 	fmt.Println("The average of", a4, b4, c4, d4, "is", (a4+b4+c4+d4)/4, "\n")
 
+	fmt.Println("5. Create a program that converts meters to centimeters.\n")
+
+	var meters float32
+
+	fmt.Scan(&meters)
+
+	fmt.Println(meters, "m corresponds to", meters*100, "centimeters.\n")
+
 }
