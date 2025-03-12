@@ -66,4 +66,10 @@ func main() {
 	fmt.Scan(&height)
 	fmt.Println("Your ideal weight is:", (72.7*height)-58, "kg")
 
+	fmt.Println("9. Create a program that calculates a person's ideal weight, using the person's height (h) as input.")
+
+	fmt.Println("Inform your height:")
+	fmt.Scan(&height)
+	fmt.Println("Your ideal weight is:", (72.7*height)-58, "kg if you are a man", (62.1*height)-44.7, "kg if you are woman")
+
 }
