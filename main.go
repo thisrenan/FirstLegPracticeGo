@@ -42,4 +42,12 @@ func main() {
 
 	fmt.Println(meters, "m corresponds to", meters*100, "centimeters.\n")
 
+	fmt.Println("6. Create a program that asks how much you earn per hour and the number of hours worked in the month. Calculate and display your total salary for the month in question.\n")
+
+	var salaryHours, workHours float32
+	fmt.Println("Tell me how much do you gain per hour:")
+	fmt.Scan(&salaryHours)
+	fmt.Println("Tell me how much hours do you worked this month: ")
+	fmt.Scan(&workHours)
+	fmt.Println("Your month salary is $", salaryHours*workHours)
 }
