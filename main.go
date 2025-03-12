@@ -72,4 +72,30 @@ func main() {
 	fmt.Scan(&height)
 	fmt.Println("Your ideal weight is:", (72.7*height)-58, "kg if you are a man", (62.1*height)-44.7, "kg if you are woman")
 
+	fmt.Println("10. Create a program that asks how much you earn per hour and the number of hours worked in the month.")
+	fmt.Println("Calculate and display your total salary for the month, knowing that 11% is deducted for income tax, 8% for social security and 5% for the union. Create a program that gives us:")
+	fmt.Println("gross salary.")
+	fmt.Println("how much you paid to social security.")
+	fmt.Println("how much you paid to the union.")
+	fmt.Println("net salary. Calculate the discounts and the net salary, according to the table below: + Gross Salary: R$ - IR (11%): R$ - INSS (8%): R$ - Union (5%): R$ = Net Salary: R$ Note: Gross Salary - Discounts = Net Salary. ")
+
+	var hourSalary, hoursWorked, IR, INSS, socialsecurity, netSalary, grossSalary float32
+
+	fmt.Println("Tell me how much do you gain per hour:")
+	fmt.Scan(&hourSalary)
+	fmt.Println("Tell me how much hours do you worked this month:")
+	fmt.Scan(&hoursWorked)
+
+	grossSalary = hourSalary * hoursWorked
+	IR = grossSalary * (11.0 / 100)
+	INSS = grossSalary * (8.0 / 100)
+	socialsecurity = grossSalary * (5.0 / 100)
+	netSalary = grossSalary - IR - INSS - socialsecurity
+
+	fmt.Println("+ Gross Salary:", grossSalary)
+	fmt.Println("- IR (11%):", IR)
+	fmt.Println("- INSS (8%):", INSS)
+	fmt.Println("- Social Security (5%):", socialsecurity)
+	fmt.Println("= Net Salary: ", netSalary)
+
 }
