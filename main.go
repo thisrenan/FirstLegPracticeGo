@@ -98,4 +98,15 @@ func main() {
 	fmt.Println("- Social Security (5%):", socialsecurity)
 	fmt.Println("= Net Salary: ", netSalary)
 
+	fmt.Println("11. Create a program that asks for the size of a file to download (in MB) and the speed of an Internet link (in Mbps), calculate and inform the approximate download time of the file using this link (in minutes).")
+
+	var archiveSize, internetSpeed, archiveSizeMegaBits float32
+
+	fmt.Println("Enter the file size in MB (Mega Bytes):")
+	fmt.Scan(&archiveSize)
+	fmt.Println("Enter your internet speed in Mbps (Mega bits per second):")
+	fmt.Scan(&internetSpeed)
+	archiveSizeMegaBits = archiveSize * 8
+	fmt.Println("The approximate time to download the file is", archiveSizeMegaBits/internetSpeed, "seconds")
+
 }
