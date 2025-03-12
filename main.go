@@ -109,4 +109,17 @@ func main() {
 	archiveSizeMegaBits = archiveSize * 8
 	fmt.Println("The approximate time to download the file is", archiveSizeMegaBits/internetSpeed, "seconds")
 
+	fmt.Println("12. Create a program that asks for two numbers and prints the largest of them.")
+
+	var number1, number2 int
+	fmt.Println("Enter an integer number:")
+	fmt.Scan(&number1)
+	fmt.Println("Enter another integer number:")
+	fmt.Scan(&number2)
+
+	if number1 > number2 {
+		fmt.Println(number1)
+	} else {
+		fmt.Println(number2)
+	}
 }
