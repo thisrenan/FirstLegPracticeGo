@@ -59,4 +59,11 @@ func main() {
 
 	fmt.Println(degreesF, "Farenheit corresponds to", (5 * (degreesF - 32) / 9), "Celsius")
 
+	fmt.Println("8. Create a program that calculates a person's ideal weight using the person's height as input data.")
+
+	var height float32
+	fmt.Println("Inform your height:")
+	fmt.Scan(&height)
+	fmt.Println("Your ideal weight is:", (72.7*height)-58, "kg")
+
 }
