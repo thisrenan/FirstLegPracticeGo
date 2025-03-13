@@ -200,4 +200,32 @@ func main() {
 
 	fmt.Println(biggerNumber, "has the bigger number.")
 
+	fmt.Println("17. Create a program that reads three numbers and displays the largest and smallest of them.")
+
+	firstNumber := 0.00
+	secondNumber := 0.00
+	thirdNumber := 0.00
+
+	fmt.Println("Enter the first number:")
+	fmt.Scan(&firstNumber)
+	fmt.Println("Enter the second number:")
+	fmt.Scan(&secondNumber)
+	fmt.Println("Enter the third number: ")
+	fmt.Scan(&thirdNumber)
+
+	if firstNumber > secondNumber && firstNumber > thirdNumber {
+		fmt.Println(firstNumber, "was the bigger number.")
+	} else if secondNumber > firstNumber && secondNumber > thirdNumber {
+		fmt.Println(secondNumber, "was the bigger number.")
+	} else {
+		fmt.Println(thirdNumber, "was the bigger number.")
+	}
+
+	if firstNumber < secondNumber && firstNumber < thirdNumber {
+		fmt.Println(firstNumber, "was the smaller number.")
+	} else if secondNumber < firstNumber && secondNumber < thirdNumber {
+		fmt.Println(secondNumber, "was the smaller number.")
+	} else {
+		fmt.Println(thirdNumber, "was the smaller number.")
+	}
 }
