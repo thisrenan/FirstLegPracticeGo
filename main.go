@@ -177,4 +177,27 @@ func main() {
 	} else {
 		fmt.Println("Failed")
 	}
+
+	fmt.Println("16. Create a program that reads three numbers and displays the largest of them.")
+
+	var numberInformed, biggerNumber float32
+
+	fmt.Println("Enter the first number:")
+	fmt.Scan(&numberInformed)
+	fmt.Println("Enter the second number:")
+	fmt.Scan(&biggerNumber)
+
+	if numberInformed > biggerNumber {
+		biggerNumber = numberInformed
+	}
+
+	fmt.Println("Enter the third number: ")
+	fmt.Scan(&numberInformed)
+
+	if numberInformed > biggerNumber {
+		biggerNumber = numberInformed
+	}
+
+	fmt.Println(biggerNumber, "has the bigger number.")
+
 }
