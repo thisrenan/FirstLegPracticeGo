@@ -153,4 +153,28 @@ func main() {
 	} else {
 		fmt.Println("Consonant")
 	}
+
+	fmt.Println("15. Create a program to read two partial grades of a student.")
+	fmt.Println("The program should calculate the average achieved by each student and display:")
+	fmt.Println("The message \"Approved\", if the average achieved is greater than or equal to seven;")
+	fmt.Println("The message \"Failed\", if the average is less than seven;")
+	fmt.Println("The message \"Approved with Distinction\", if the average is equal to ten.")
+
+	var firstGrade, secondGrade, averageGrade float32
+
+	fmt.Println("Enter the first grade: ")
+	fmt.Scan(&firstGrade)
+
+	fmt.Println("Enter the second grade: ")
+	fmt.Scan(&secondGrade)
+
+	averageGrade = (firstGrade + secondGrade) / 2.0
+
+	if averageGrade == 10 {
+		fmt.Println("Approved with Distinction")
+	} else if averageGrade >= 7 {
+		fmt.Println("Approved")
+	} else {
+		fmt.Println("Failed")
+	}
 }
