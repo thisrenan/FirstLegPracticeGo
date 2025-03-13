@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 
@@ -135,5 +138,19 @@ func main() {
 		fmt.Println("The value entered is positive.")
 	} else if value < 0 {
 		fmt.Println("The value entered is negative.")
+	}
+
+	fmt.Println("14. Create a program that checks whether a typed letter is a vowel or a consonant.")
+
+	var letter string
+	fmt.Println("Enter a letter: ")
+	fmt.Scan(&letter)
+
+	letter = strings.ToUpper(letter)
+
+	if strings.Compare(letter, "A") == 0 || strings.Compare(letter, "E") == 0 || strings.Compare(letter, "I") == 0 || strings.Compare(letter, "O") == 0 || strings.Compare(letter, "U") == 0 {
+		fmt.Println("Vowel")
+	} else {
+		fmt.Println("Consonant")
 	}
 }
