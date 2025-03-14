@@ -247,4 +247,29 @@ func main() {
 	} else {
 		fmt.Println("The product with the lowest price is product three, costing $", price3)
 	}
+
+	fmt.Println("19. Create a program that reads three numbers and displays them in descending order.")
+
+	var numberOne, numberTwo, numberThree float32
+
+	fmt.Println("Inform the first number: ")
+	fmt.Scan(&numberOne)
+	fmt.Println("Inform the second number: ")
+	fmt.Scan(&numberTwo)
+	fmt.Println("Inform the third number: ")
+	fmt.Scan(&numberThree)
+
+	if numberOne > numberTwo && numberTwo > numberThree {
+		fmt.Println(numberOne, numberTwo, numberThree)
+	} else if numberOne > numberThree && numberThree > numberTwo {
+		fmt.Println(numberOne, numberThree, numberTwo)
+	} else if numberTwo > numberOne && numberOne > numberThree {
+		fmt.Println(numberTwo, numberOne, numberThree)
+	} else if numberTwo > numberThree && numberThree > numberOne {
+		fmt.Println(numberTwo, numberThree, numberOne)
+	} else if numberThree > numberOne && numberThree > numberTwo {
+		fmt.Println(numberThree, numberOne, numberTwo)
+	} else {
+		fmt.Println(numberThree, numberTwo, numberOne)
+	}
 }
