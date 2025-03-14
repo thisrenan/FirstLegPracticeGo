@@ -272,4 +272,16 @@ func main() {
 	} else {
 		fmt.Println(numberThree, numberTwo, numberOne)
 	}
+
+	fmt.Println("20. Create a program that reads the price of a product and inflates that price by 10% if it is less than 100 and by 20% if it is greater than or equal to 100.")
+
+	var productPrice float32
+	fmt.Println("Inform the price of the product:")
+	fmt.Scan(&productPrice)
+
+	if productPrice >= 100 {
+		fmt.Println("The real product price is ", productPrice+(productPrice*0.20))
+	} else {
+		fmt.Println("The real product price is ", productPrice+(productPrice*0.10))
+	}
 }
