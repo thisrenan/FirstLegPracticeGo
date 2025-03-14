@@ -228,4 +228,23 @@ func main() {
 	} else {
 		fmt.Println(thirdNumber, "was the smaller number.")
 	}
+
+	fmt.Println("18. Create a program that asks for the price of three products and tells you which product you should buy, knowing that the decision is always the cheapest.")
+
+	var price1, price2, price3 float32
+
+	fmt.Println("Inform the price of product one:")
+	fmt.Scan(&price1)
+	fmt.Println("Inform the price of product two:")
+	fmt.Scan(&price2)
+	fmt.Println("Inform the price of product three:")
+	fmt.Scan(&price3)
+
+	if price1 < price2 && price1 < price3 {
+		fmt.Println("The product with the lowest price is product one, costing $", price1)
+	} else if price2 < price1 && price2 < price3 {
+		fmt.Println("The product with the lowest price is product two, costing $", price2)
+	} else {
+		fmt.Println("The product with the lowest price is product three, costing $", price3)
+	}
 }
